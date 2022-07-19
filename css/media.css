@@ -1,0 +1,42 @@
+@media (max-width: 992px) { 
+    .big , .big .left{
+        display: none !important;
+    }
+   .footer .center{
+    text-align: center;
+   }
+   .footer .center1{
+    justify-content: center !important;
+    text-align: center;
+    padding-top: 15px;
+   }
+}
+
+@media (max-width: 575px) { 
+    .right .navv{
+        display: block !important;
+    }
+    .right .navv .search{
+        margin: 23px 0;
+    }
+    .right .navv .search .d-flex{
+        justify-content: start !important;
+    }
+    .right .graph{
+        margin-top: 4rem !important;
+    }
+    .right .graph .up{
+        margin-top: 0.2rem !important;
+    }
+    .table{
+        width: 80%;
+    }
+    .footer .center1 {
+        flex-wrap: wrap;
+    }
+    .table .none{
+        display: none !important;
+    }
+ }
+
+
