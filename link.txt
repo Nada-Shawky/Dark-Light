@@ -1,1 +1,1 @@
-https://nada-demo.netlify.app/
+https://demo-nada.netlify.app/
