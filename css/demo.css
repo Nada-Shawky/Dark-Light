@@ -4,14 +4,15 @@
     --gray: #F0F2F5;
     --nav: #3A3A40;
     --shadow: #d3d6dbe0;
+    --sqare :#4A4A4C
 }
 .dark{
     --white: #202940;
     --black: #fff;
     --gray: #1A2035;
-    --nav: #fff;
+    --nav: #202940;
     --shadow: #2a385c;
-    
+    --sqare :#4a4f62
 }
 
 *{
@@ -28,14 +29,13 @@ i:hover{
     margin: 25px;
 }
 .left{
-    background-color: var(--nav);
+    background-color:var(--nav);
     margin-right: 30px;
-    
     height: 92vh;
     overflow-y: auto;
     overflow-x: hidden;
     border-radius: 10px;
-    color: var(--white);
+    color: #fff;
     width: 5%;
     position: fixed;
 }
@@ -76,7 +76,7 @@ i:hover{
     border-radius: 10px;
 }
 .dash {
-    background-color: #4A4A4C;
+    background-color: var(--sqare);
     border-radius: 10px;
     padding: 10px 10px 0;
     margin-bottom: 8px;
@@ -105,22 +105,26 @@ i:hover{
 
 /* scroll-bar */
 .left::-webkit-scrollbar{
-    width: 10px;
+    width: 8px;
+    overflow: hidden;
 }
 .left:hover{
     cursor: pointer;
 }
 .left::-webkit-scrollbar-track{
     background-color: transparent;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 20px 20px 0;
 }
 .left::-webkit-scrollbar-track:hover{
     background-color: #D9D9DA;
 }
 .left::-webkit-scrollbar-thumb{
     background-color: #8E8E8F;
-    border-radius: 20px;
+    border-radius: 50px;
 }
+
+/* end--scrollbar */
+
 .left p , .left .lef{
     display: none !important;
 }
@@ -145,6 +149,17 @@ i:hover{
     width: 6%;
 }
 .big:hover{
+    width: 33%;
+}
+/* class left2 */
+.left2{
+    width: 23.2%;
+    padding: 0 20px 30px;
+}
+.left2 p , .left2 .lef{
+    display: block !important;
+}
+.big2{
     width: 33%;
 }
 
@@ -261,7 +276,7 @@ i:hover{
     box-shadow: 0px 5px 12px 0 var(--shadow);
 }.right .graph h5{
     color: var(--black);
-    margin: 25px 0 0;
+    margin: 25px 0 10px;
     font-weight: bold;
     font-size: 17px;
 }
