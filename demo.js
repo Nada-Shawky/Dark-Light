@@ -49,3 +49,21 @@ icon.onclick= function(){
         icon.setAttribute("class", "fa-solid fa-moon")
     }
 }
+
+//  click
+/* <i class="fa-solid fa-align-justify" id="align"></i>
+ <i class="fa-solid fa-align-right"></i> */
+let control=document.getElementById("control"),
+    left=document.getElementById("left"),
+    big=document.getElementById("big");
+
+    control.onclick = function(){
+        left.classList.toggle("left2")
+        big.classList.toggle("big2")
+        
+        if(control.getAttribute("class")=="fa-solid fa-align-justify"){
+            control.setAttribute("class", "fa-solid fa-align-right")
+        }else{
+            control.setAttribute("class", "fa-solid fa-align-justify")
+        }
+    }
